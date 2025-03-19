@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: space-between; /* กระจายช่องว่างระหว่างไอเท็ม */
+    gap:  20px;
+}
+.item{
+    background-color: #007bff;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+
+}
+.container2{
+    display: flex;
+    align-items: center; /* จัดไอเท็มให้อยู่กลางในแนวตั้ง */
+    gap: 20px;
+    height: 400px;
+    flex-grow: 1; /* ทำให้ไอเท็มขยายให้เต็มพื้นที่ */
+}

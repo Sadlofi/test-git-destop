@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 100px;
+}
+.item{
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    width: 100px;
+}
+/* เปลี่ยนลำดับของไอเท็ม */
+.item:nth-child(2){
+    order: 3;
+    background-color: black;
+}
+.item:nth-child(3){
+    order: 2;
+}
+.item:nth-child(1){
+    align-self: flex-start;
+}

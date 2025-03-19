@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;/* ทำให้ไอเท็มขึ้นบรรทัดใหม่เมื่อพื้นที่ไม่พอ */
+    background-color: #f4f4f4;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.item {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1; /* ให้กล่องขยายเท่ากัน */
+    min-width: 100px; /* ป้องกันไม่ให้เล็กเกินไป */
+    max-width: 200px; /* จำกัดขนาดไม่ให้ใหญ่เกินไป */
+}
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+    }
+    .item{
+        width: 80%;
+        max-width: none;
+    }
+
+}
